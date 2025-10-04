@@ -1,7 +1,7 @@
 # --- Terraform dirs/files ---
 **/.terraform/*
-*.tfstate
-*.tfstate.*
+# *.tfstate
+# *.tfstate.*
 .terraform.tfstate.lock.info
 
 # Keep the dependency lockfile committed (for reproducible provider versions)

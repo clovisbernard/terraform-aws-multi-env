@@ -1,0 +1,42 @@
+# --- Terraform dirs/files ---
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Keep the dependency lockfile committed (for reproducible provider versions)
+# (Do NOT ignore .terraform.lock.hcl)
+
+# --- Your local backend state paths ---
+states/
+resources/terraform.tfstate
+resources/terraform.tfstate.*
+
+# --- Plans & crash logs ---
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+
+# --- Sensitive var files ---
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# --- Environment config with secrets (passwords in YAML) ---
+envs/*.yaml
+!envs/*.yaml.example
+envs/*.local.yaml
+
+# --- Terraform override files (local-only tweaks) ---
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Editors/OS noise ---
+.DS_Store
+.idea/
+.vscode/
+*.swp

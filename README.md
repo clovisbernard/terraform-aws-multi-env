@@ -46,20 +46,20 @@ Modular **Terraform** stack for **AWS** — VPC, public/private subnets, IGW/NAT
 │       ├── main.tf
 │       ├── outputs.tf
 │       └── variables.tf
-├── README.md
+└── states
+│    ├── dev
+│    │   ├── terraform.tfstate
+│    │   └── terraform.tfstate.backup
+│    └── prod
+│       ├── terraform.tfstate
+│       └── terraform.tfstate.backup
 ├── resources
 │   ├── backend.tf
 │   ├── main.tf
 │   ├── outputs.tf
 │   ├── provider.tf
 │   └── variables.tf
-└── states
-    ├── dev
-    │   ├── terraform.tfstate
-    │   └── terraform.tfstate.backup
-    └── prod
-        ├── terraform.tfstate
-        └── terraform.tfstate.backup
+├── README.md
 ```
 
 ---

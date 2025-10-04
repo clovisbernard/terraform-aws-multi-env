@@ -18,8 +18,8 @@ ec2:
 sql_db:
   db_instance_class: ""                 
   engine: "sqlse"                       
-  username: "username"
-  password: "pass"                  
+  username: "admin"
+  password: "password"                  
   allocated_storage: 1000               
   iops: 3000                            
   multi_az: false

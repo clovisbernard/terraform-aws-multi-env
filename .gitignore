@@ -7,10 +7,9 @@
 # Keep the dependency lockfile committed (for reproducible provider versions)
 # (Do NOT ignore .terraform.lock.hcl)
 
-# --- Your local backend state paths ---
-# states/
-resources/terraform.tfstate
-resources/terraform.tfstate.*
+# Ignore all Terraform state files
+*.tfstate
+*.tfstate.*
 
 # --- Plans & crash logs ---
 *.tfplan

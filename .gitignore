@@ -39,3 +39,5 @@ override.tf.json
 .idea/
 .vscode/
 *.swp
+
+.terraform.lock.hcl

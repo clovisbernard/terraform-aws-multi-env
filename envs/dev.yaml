@@ -1,0 +1,39 @@
+vpc:
+  cidr: "10.0.0.0/16"
+
+subnets:
+  public-1a: "10.0.1.0/24"
+  public-1b: "10.0.2.0/24"
+  private-1a: "10.0.10.0/24"
+  private-1b: "10.0.11.0/24"
+
+ec2:
+  aws_region: "us-east-1"
+  ami_id: "ami-0f6d3d1de3c02ee19"
+  instance_type: "t2.micro"
+  key_name: "2025-key"
+  subnet_name: "private-1a"
+  volume_size: 40
+
+sql_db:
+  db_instance_class: ""                 
+  engine: "sqlse"                       
+  username: "username"
+  password: "pass"                  
+  allocated_storage: 1000               
+  iops: 3000                            
+  multi_az: false
+  publicly_accessible: false
+  parameter_group_name: "default.sqlserver-se-15.0"
+  availability_zone: "us-east-1b"
+  monitoring_interval: 60
+  performance_insights_enabled: true
+  deletion_protection: false
+  create_monitoring_role: false
+  create_subnet_group: false            
+  create_option_group: false
+
+tags:
+  team: "Devops"
+  environment: " "
+  project: "demo"

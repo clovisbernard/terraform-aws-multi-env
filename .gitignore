@@ -8,7 +8,7 @@
 # (Do NOT ignore .terraform.lock.hcl)
 
 # --- Your local backend state paths ---
-states/
+# states/
 resources/terraform.tfstate
 resources/terraform.tfstate.*
 
@@ -25,9 +25,9 @@ crash.*.log
 *.auto.tfvars.json
 
 # --- Environment config with secrets (passwords in YAML) ---
-envs/*.yaml
-!envs/*.yaml.example
-envs/*.local.yaml
+# envs/*.yaml
+# !envs/*.yaml.example
+# envs/*.local.yaml
 
 # --- Terraform override files (local-only tweaks) ---
 override.tf
